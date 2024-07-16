@@ -1,0 +1,57 @@
+@import "base/null.scss";
+
+:root {
+   --ColorHead: #007AFC;
+   --ColorTextHead: #ffffff;
+   --yith-wcan-labels_style_background_hover: #007AFC;
+    --yith-wcan-filters_colors_accent: #007AFC;
+    --yith-wcan-anchors_style_text_hover:  #007AFC; 
+    --yith-wcan-anchors_style_text_active: #007AFC;
+    --badgickSale: #ff2d37;
+    --badgickNew: #3599ff;
+    --badgickHit: #098524;
+}
+
+$minWidth: 320;
+$maxWidthContainer: 1590;
+$padding: 15;
+
+$ColorHead: var(--ColorHead);
+$ColorTextHead: var(--ColorTextHead);
+
+
+.container {
+   max-width: #{$maxWidthContainer}px;
+   padding: 0 #{$padding}px;
+   margin: 0 auto;
+}
+
+.wrapper {
+   min-height: 100%;
+   display: grid;
+   grid-template-rows: auto 1fr auto;
+   position: relative;
+   overflow-x: hidden;
+}
+.content-wrapper {
+   margin: 205px 0 20px 0;
+   max-width: 100%;
+   height: 100%;
+   overflow-x: hidden;
+}
+
+footer {
+   margin-top: auto;
+}
+
+
+@import "base/mixin";
+@import "fonts";
+
+@import "./wp/wpstyle.scss";
+@import "wp/woo/woo.scss";
+
+@import "header";
+@import "footer";
+
+
